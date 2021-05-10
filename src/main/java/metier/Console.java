@@ -6,7 +6,6 @@ public class Console {
 	private double prix;
 	private String dateSortie;
 
-	
 
 	public Console(String nom, double prix, String dateSortie) {
 		super();
