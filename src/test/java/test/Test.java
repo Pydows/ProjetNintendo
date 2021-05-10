@@ -1,20 +1,35 @@
 package test;
 
-public class Test {
+import java.util.ArrayList;
+import java.util.List;
 
-	Jeu MarioKart = new Jeu("");
-	Jeu JakDaxter = new Jeu("");
-	Jeu AmongUs = new Jeu("");
-	Jeu Sims = new Jeu("");
-	Jeu AnimalCrossing = new Jeu("");
+import metier.*;
+
+public class Test {
 	
-	Console PC = new Console("");
-	Console PS2 = new Console("");
-	Console Switch = new Console("");
+	Console PC = new Console("PC");
+	Console PS2 = new Console("PS2");
+	Console Switch = new Console("Switch");
+	
+	List<Console> consoles1 = new ArrayList<Console>();
+	List<Console> consoles2 = new ArrayList<Console>();
+	List<Console> consoles3 = new ArrayList<Console>();
+
+	
+	
+	Jeu MarioKart = new Jeu("MarioKart", consoles1);
+	Jeu JakDaxter = new Jeu("JakDaxter",consoles1);
+	Jeu AmongUs = new Jeu("AmongUs",consoles2);
+	Jeu Sims = new Jeu("Sims",consoles2);
+	Jeu AnimalCrossing = new Jeu("AnimalCrossing",consoles3);
+
+	
+	
+	
 	
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 
 	}
 
